@@ -22,10 +22,13 @@ public class maximumSumPairs {
             ArrayL2.add(in.nextInt());
         }
         in.close();
+        fun(ArrayL1, ArrayL2 , n);
+    }
 
         //write your code here
+        public static void fun(ArrayList<Integer> ArrayL1 , ArrayList<Integer> ArrayL2 , int n){
         PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
-        for( i=0 ; i<n ; i++){
+        for( int i=0 ; i<n ; i++){
             for( int j=0 ; j<n ; j++){
                 priorityQueue.add(-1 * ( ArrayL1.get(i) + ArrayL2.get(j) ));
             }
